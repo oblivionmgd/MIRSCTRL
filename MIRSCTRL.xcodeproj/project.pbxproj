@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		418AE58C03EA18474800DD1C /* Pods_MIRSCTRL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F23415D2804C23064D783B6 /* Pods_MIRSCTRL.framework */; };
+		5FAE5AA4104E9EDCA93FB9B7 /* Pods_MIRSCTRL_MIRSCTRLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57F4EA73D49E7F75E784A47 /* Pods_MIRSCTRL_MIRSCTRLUITests.framework */; };
+		96DADB36B73E9F90F1BB0239 /* Pods_MIRSCTRLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DF3514FAA39AE133C86C9D /* Pods_MIRSCTRLTests.framework */; };
+		AC09974725771CBA00DD8AD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC09974625771CBA00DD8AD9 /* GoogleService-Info.plist */; };
+		ACA6E4D1257717270063255E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4D0257717270063255E /* AppDelegate.swift */; };
+		ACA6E4D3257717270063255E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4D2257717270063255E /* SceneDelegate.swift */; };
+		ACA6E4D5257717270063255E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4D4257717270063255E /* ContentView.swift */; };
+		ACA6E4D72577172B0063255E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA6E4D62577172B0063255E /* Assets.xcassets */; };
+		ACA6E4DA2577172B0063255E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA6E4D92577172B0063255E /* Preview Assets.xcassets */; };
+		ACA6E4DD2577172B0063255E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA6E4DB2577172B0063255E /* LaunchScreen.storyboard */; };
+		ACA6E4E82577172B0063255E /* MIRSCTRLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4E72577172B0063255E /* MIRSCTRLTests.swift */; };
+		ACA6E4F32577172B0063255E /* MIRSCTRLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4F22577172B0063255E /* MIRSCTRLUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACA6E4E42577172B0063255E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA6E4C5257717270063255E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA6E4CC257717270063255E;
+			remoteInfo = MIRSCTRL;
+		};
+		ACA6E4EF2577172B0063255E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA6E4C5257717270063255E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA6E4CC257717270063255E;
+			remoteInfo = MIRSCTRL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23B4D160008BF419A50FA12A /* Pods-MIRSCTRL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRL.debug.xcconfig"; path = "Target Support Files/Pods-MIRSCTRL/Pods-MIRSCTRL.debug.xcconfig"; sourceTree = "<group>"; };
+		616C8C240E8E14FC4DCA7ED1 /* Pods-MIRSCTRLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRLTests.debug.xcconfig"; path = "Target Support Files/Pods-MIRSCTRLTests/Pods-MIRSCTRLTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F23415D2804C23064D783B6 /* Pods_MIRSCTRL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MIRSCTRL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DF3514FAA39AE133C86C9D /* Pods_MIRSCTRLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MIRSCTRLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		984C7506655CF12978DDA58B /* Pods-MIRSCTRL-MIRSCTRLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRL-MIRSCTRLUITests.debug.xcconfig"; path = "Target Support Files/Pods-MIRSCTRL-MIRSCTRLUITests/Pods-MIRSCTRL-MIRSCTRLUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC09974625771CBA00DD8AD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACA6E4CD257717270063255E /* MIRSCTRL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIRSCTRL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA6E4D0257717270063255E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACA6E4D2257717270063255E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ACA6E4D4257717270063255E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACA6E4D62577172B0063255E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACA6E4D92577172B0063255E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACA6E4DC2577172B0063255E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACA6E4DE2577172B0063255E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA6E4E32577172B0063255E /* MIRSCTRLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIRSCTRLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA6E4E72577172B0063255E /* MIRSCTRLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIRSCTRLTests.swift; sourceTree = "<group>"; };
+		ACA6E4E92577172B0063255E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA6E4EE2577172B0063255E /* MIRSCTRLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIRSCTRLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA6E4F22577172B0063255E /* MIRSCTRLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIRSCTRLUITests.swift; sourceTree = "<group>"; };
+		ACA6E4F42577172B0063255E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1EFF10F9D06E311B79B6524 /* Pods-MIRSCTRLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRLTests.release.xcconfig"; path = "Target Support Files/Pods-MIRSCTRLTests/Pods-MIRSCTRLTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5D538897A2AD3DF41E814AD /* Pods-MIRSCTRL-MIRSCTRLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRL-MIRSCTRLUITests.release.xcconfig"; path = "Target Support Files/Pods-MIRSCTRL-MIRSCTRLUITests/Pods-MIRSCTRL-MIRSCTRLUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E993F53D4EAC30FB9528099E /* Pods-MIRSCTRL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRL.release.xcconfig"; path = "Target Support Files/Pods-MIRSCTRL/Pods-MIRSCTRL.release.xcconfig"; sourceTree = "<group>"; };
+		F57F4EA73D49E7F75E784A47 /* Pods_MIRSCTRL_MIRSCTRLUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MIRSCTRL_MIRSCTRLUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACA6E4CA257717270063255E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418AE58C03EA18474800DD1C /* Pods_MIRSCTRL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA6E4E02577172B0063255E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96DADB36B73E9F90F1BB0239 /* Pods_MIRSCTRLTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA6E4EB2577172B0063255E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FAE5AA4104E9EDCA93FB9B7 /* Pods_MIRSCTRL_MIRSCTRLUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		543A8DE63D1B05027E4712E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F23415D2804C23064D783B6 /* Pods_MIRSCTRL.framework */,
+				F57F4EA73D49E7F75E784A47 /* Pods_MIRSCTRL_MIRSCTRLUITests.framework */,
+				95DF3514FAA39AE133C86C9D /* Pods_MIRSCTRLTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACA6E4C4257717270063255E = {
+			isa = PBXGroup;
+			children = (
+				ACA6E4CF257717270063255E /* MIRSCTRL */,
+				ACA6E4E62577172B0063255E /* MIRSCTRLTests */,
+				ACA6E4F12577172B0063255E /* MIRSCTRLUITests */,
+				ACA6E4CE257717270063255E /* Products */,
+				FFBED3F83B3A693D30CCCE0F /* Pods */,
+				543A8DE63D1B05027E4712E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACA6E4CE257717270063255E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACA6E4CD257717270063255E /* MIRSCTRL.app */,
+				ACA6E4E32577172B0063255E /* MIRSCTRLTests.xctest */,
+				ACA6E4EE2577172B0063255E /* MIRSCTRLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACA6E4CF257717270063255E /* MIRSCTRL */ = {
+			isa = PBXGroup;
+			children = (
+				AC09974625771CBA00DD8AD9 /* GoogleService-Info.plist */,
+				ACA6E4D0257717270063255E /* AppDelegate.swift */,
+				ACA6E4D2257717270063255E /* SceneDelegate.swift */,
+				ACA6E4D4257717270063255E /* ContentView.swift */,
+				ACA6E4D62577172B0063255E /* Assets.xcassets */,
+				ACA6E4DB2577172B0063255E /* LaunchScreen.storyboard */,
+				ACA6E4DE2577172B0063255E /* Info.plist */,
+				ACA6E4D82577172B0063255E /* Preview Content */,
+			);
+			path = MIRSCTRL;
+			sourceTree = "<group>";
+		};
+		ACA6E4D82577172B0063255E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACA6E4D92577172B0063255E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACA6E4E62577172B0063255E /* MIRSCTRLTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA6E4E72577172B0063255E /* MIRSCTRLTests.swift */,
+				ACA6E4E92577172B0063255E /* Info.plist */,
+			);
+			path = MIRSCTRLTests;
+			sourceTree = "<group>";
+		};
+		ACA6E4F12577172B0063255E /* MIRSCTRLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA6E4F22577172B0063255E /* MIRSCTRLUITests.swift */,
+				ACA6E4F42577172B0063255E /* Info.plist */,
+			);
+			path = MIRSCTRLUITests;
+			sourceTree = "<group>";
+		};
+		FFBED3F83B3A693D30CCCE0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23B4D160008BF419A50FA12A /* Pods-MIRSCTRL.debug.xcconfig */,
+				E993F53D4EAC30FB9528099E /* Pods-MIRSCTRL.release.xcconfig */,
+				984C7506655CF12978DDA58B /* Pods-MIRSCTRL-MIRSCTRLUITests.debug.xcconfig */,
+				C5D538897A2AD3DF41E814AD /* Pods-MIRSCTRL-MIRSCTRLUITests.release.xcconfig */,
+				616C8C240E8E14FC4DCA7ED1 /* Pods-MIRSCTRLTests.debug.xcconfig */,
+				B1EFF10F9D06E311B79B6524 /* Pods-MIRSCTRLTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACA6E4CC257717270063255E /* MIRSCTRL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA6E4F72577172B0063255E /* Build configuration list for PBXNativeTarget "MIRSCTRL" */;
+			buildPhases = (
+				C90ECB5DF07A791175451C0B /* [CP] Check Pods Manifest.lock */,
+				ACA6E4C9257717270063255E /* Sources */,
+				ACA6E4CA257717270063255E /* Frameworks */,
+				ACA6E4CB257717270063255E /* Resources */,
+				93F2DB7E2F9F1E31F500F046 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIRSCTRL;
+			productName = MIRSCTRL;
+			productReference = ACA6E4CD257717270063255E /* MIRSCTRL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACA6E4E22577172B0063255E /* MIRSCTRLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA6E4FA2577172B0063255E /* Build configuration list for PBXNativeTarget "MIRSCTRLTests" */;
+			buildPhases = (
+				D332335F488BFCE82FFE04B4 /* [CP] Check Pods Manifest.lock */,
+				ACA6E4DF2577172B0063255E /* Sources */,
+				ACA6E4E02577172B0063255E /* Frameworks */,
+				ACA6E4E12577172B0063255E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA6E4E52577172B0063255E /* PBXTargetDependency */,
+			);
+			name = MIRSCTRLTests;
+			productName = MIRSCTRLTests;
+			productReference = ACA6E4E32577172B0063255E /* MIRSCTRLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACA6E4ED2577172B0063255E /* MIRSCTRLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA6E4FD2577172B0063255E /* Build configuration list for PBXNativeTarget "MIRSCTRLUITests" */;
+			buildPhases = (
+				BE7FF943B57EF8064F7A13A5 /* [CP] Check Pods Manifest.lock */,
+				ACA6E4EA2577172B0063255E /* Sources */,
+				ACA6E4EB2577172B0063255E /* Frameworks */,
+				ACA6E4EC2577172B0063255E /* Resources */,
+				FF544FA0323FE1072FF6C230 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA6E4F02577172B0063255E /* PBXTargetDependency */,
+			);
+			name = MIRSCTRLUITests;
+			productName = MIRSCTRLUITests;
+			productReference = ACA6E4EE2577172B0063255E /* MIRSCTRLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACA6E4C5257717270063255E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					ACA6E4CC257717270063255E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					ACA6E4E22577172B0063255E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ACA6E4CC257717270063255E;
+					};
+					ACA6E4ED2577172B0063255E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ACA6E4CC257717270063255E;
+					};
+				};
+			};
+			buildConfigurationList = ACA6E4C8257717270063255E /* Build configuration list for PBXProject "MIRSCTRL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACA6E4C4257717270063255E;
+			productRefGroup = ACA6E4CE257717270063255E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA6E4CC257717270063255E /* MIRSCTRL */,
+				ACA6E4E22577172B0063255E /* MIRSCTRLTests */,
+				ACA6E4ED2577172B0063255E /* MIRSCTRLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA6E4CB257717270063255E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA6E4DD2577172B0063255E /* LaunchScreen.storyboard in Resources */,
+				AC09974725771CBA00DD8AD9 /* GoogleService-Info.plist in Resources */,
+				ACA6E4DA2577172B0063255E /* Preview Assets.xcassets in Resources */,
+				ACA6E4D72577172B0063255E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA6E4E12577172B0063255E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA6E4EC2577172B0063255E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93F2DB7E2F9F1E31F500F046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MIRSCTRL/Pods-MIRSCTRL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MIRSCTRL/Pods-MIRSCTRL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MIRSCTRL/Pods-MIRSCTRL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE7FF943B57EF8064F7A13A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MIRSCTRL-MIRSCTRLUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90ECB5DF07A791175451C0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MIRSCTRL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D332335F488BFCE82FFE04B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MIRSCTRLTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF544FA0323FE1072FF6C230 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MIRSCTRL-MIRSCTRLUITests/Pods-MIRSCTRL-MIRSCTRLUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MIRSCTRL-MIRSCTRLUITests/Pods-MIRSCTRL-MIRSCTRLUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MIRSCTRL-MIRSCTRLUITests/Pods-MIRSCTRL-MIRSCTRLUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACA6E4C9257717270063255E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA6E4D1257717270063255E /* AppDelegate.swift in Sources */,
+				ACA6E4D3257717270063255E /* SceneDelegate.swift in Sources */,
+				ACA6E4D5257717270063255E /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA6E4DF2577172B0063255E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA6E4E82577172B0063255E /* MIRSCTRLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA6E4EA2577172B0063255E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA6E4F32577172B0063255E /* MIRSCTRLUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACA6E4E52577172B0063255E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA6E4CC257717270063255E /* MIRSCTRL */;
+			targetProxy = ACA6E4E42577172B0063255E /* PBXContainerItemProxy */;
+		};
+		ACA6E4F02577172B0063255E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA6E4CC257717270063255E /* MIRSCTRL */;
+			targetProxy = ACA6E4EF2577172B0063255E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACA6E4DB2577172B0063255E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACA6E4DC2577172B0063255E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACA6E4F52577172B0063255E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACA6E4F62577172B0063255E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACA6E4F82577172B0063255E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B4D160008BF419A50FA12A /* Pods-MIRSCTRL.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MIRSCTRL/Preview Content\"";
+				DEVELOPMENT_TEAM = BFFHDSNJ99;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MIRSCTRL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oblivionmgd.mirsctrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ACA6E4F92577172B0063255E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E993F53D4EAC30FB9528099E /* Pods-MIRSCTRL.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MIRSCTRL/Preview Content\"";
+				DEVELOPMENT_TEAM = BFFHDSNJ99;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MIRSCTRL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oblivionmgd.mirsctrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		ACA6E4FB2577172B0063255E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 616C8C240E8E14FC4DCA7ED1 /* Pods-MIRSCTRLTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFFHDSNJ99;
+				INFOPLIST_FILE = MIRSCTRLTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oblivionmgd.MIRSCTRLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIRSCTRL.app/MIRSCTRL";
+			};
+			name = Debug;
+		};
+		ACA6E4FC2577172B0063255E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1EFF10F9D06E311B79B6524 /* Pods-MIRSCTRLTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFFHDSNJ99;
+				INFOPLIST_FILE = MIRSCTRLTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oblivionmgd.MIRSCTRLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIRSCTRL.app/MIRSCTRL";
+			};
+			name = Release;
+		};
+		ACA6E4FE2577172B0063255E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 984C7506655CF12978DDA58B /* Pods-MIRSCTRL-MIRSCTRLUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFFHDSNJ99;
+				INFOPLIST_FILE = MIRSCTRLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oblivionmgd.MIRSCTRLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MIRSCTRL;
+			};
+			name = Debug;
+		};
+		ACA6E4FF2577172B0063255E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D538897A2AD3DF41E814AD /* Pods-MIRSCTRL-MIRSCTRLUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFFHDSNJ99;
+				INFOPLIST_FILE = MIRSCTRLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oblivionmgd.MIRSCTRLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MIRSCTRL;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACA6E4C8257717270063255E /* Build configuration list for PBXProject "MIRSCTRL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA6E4F52577172B0063255E /* Debug */,
+				ACA6E4F62577172B0063255E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA6E4F72577172B0063255E /* Build configuration list for PBXNativeTarget "MIRSCTRL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA6E4F82577172B0063255E /* Debug */,
+				ACA6E4F92577172B0063255E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA6E4FA2577172B0063255E /* Build configuration list for PBXNativeTarget "MIRSCTRLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA6E4FB2577172B0063255E /* Debug */,
+				ACA6E4FC2577172B0063255E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA6E4FD2577172B0063255E /* Build configuration list for PBXNativeTarget "MIRSCTRLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA6E4FE2577172B0063255E /* Debug */,
+				ACA6E4FF2577172B0063255E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACA6E4C5257717270063255E /* Project object */;
+}
