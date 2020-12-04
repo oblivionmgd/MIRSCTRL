@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hi.")
-            .padding()
+        ZStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
+            HomeBackgound()
+            
+            Spacer()
+        }
     }
 }
 
