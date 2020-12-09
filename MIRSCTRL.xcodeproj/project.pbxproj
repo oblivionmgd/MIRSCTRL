@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		5FAE5AA4104E9EDCA93FB9B7 /* Pods_MIRSCTRL_MIRSCTRLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57F4EA73D49E7F75E784A47 /* Pods_MIRSCTRL_MIRSCTRLUITests.framework */; };
 		96DADB36B73E9F90F1BB0239 /* Pods_MIRSCTRLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DF3514FAA39AE133C86C9D /* Pods_MIRSCTRLTests.framework */; };
 		AC09974725771CBA00DD8AD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC09974625771CBA00DD8AD9 /* GoogleService-Info.plist */; };
+		AC0E5B44257F96CC00CFB321 /* Neumorphic in Frameworks */ = {isa = PBXBuildFile; productRef = AC0E5B43257F96CC00CFB321 /* Neumorphic */; };
+		AC0E5B4925804CF300CFB321 /* neumorphismButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E5B4825804CF300CFB321 /* neumorphismButton.swift */; };
 		ACA6E4D1257717270063255E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4D0257717270063255E /* AppDelegate.swift */; };
 		ACA6E4D3257717270063255E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4D2257717270063255E /* SceneDelegate.swift */; };
 		ACA6E4D5257717270063255E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4D4257717270063255E /* ContentView.swift */; };
@@ -19,6 +21,7 @@
 		ACA6E4DD2577172B0063255E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA6E4DB2577172B0063255E /* LaunchScreen.storyboard */; };
 		ACA6E4E82577172B0063255E /* MIRSCTRLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4E72577172B0063255E /* MIRSCTRLTests.swift */; };
 		ACA6E4F32577172B0063255E /* MIRSCTRLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E4F22577172B0063255E /* MIRSCTRLUITests.swift */; };
+		ACA90BF8257A09A3002086B1 /* HomeBackgound.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA90BF7257A09A3002086B1 /* HomeBackgound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 		95DF3514FAA39AE133C86C9D /* Pods_MIRSCTRLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MIRSCTRLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		984C7506655CF12978DDA58B /* Pods-MIRSCTRL-MIRSCTRLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRL-MIRSCTRLUITests.debug.xcconfig"; path = "Target Support Files/Pods-MIRSCTRL-MIRSCTRLUITests/Pods-MIRSCTRL-MIRSCTRLUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC09974625771CBA00DD8AD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC0E5B4825804CF300CFB321 /* neumorphismButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neumorphismButton.swift; sourceTree = "<group>"; };
 		ACA6E4CD257717270063255E /* MIRSCTRL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIRSCTRL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA6E4D0257717270063255E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA6E4D2257717270063255E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 		ACA6E4EE2577172B0063255E /* MIRSCTRLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIRSCTRLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA6E4F22577172B0063255E /* MIRSCTRLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIRSCTRLUITests.swift; sourceTree = "<group>"; };
 		ACA6E4F42577172B0063255E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA90BF7257A09A3002086B1 /* HomeBackgound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBackgound.swift; sourceTree = "<group>"; };
 		B1EFF10F9D06E311B79B6524 /* Pods-MIRSCTRLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRLTests.release.xcconfig"; path = "Target Support Files/Pods-MIRSCTRLTests/Pods-MIRSCTRLTests.release.xcconfig"; sourceTree = "<group>"; };
 		C5D538897A2AD3DF41E814AD /* Pods-MIRSCTRL-MIRSCTRLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRL-MIRSCTRLUITests.release.xcconfig"; path = "Target Support Files/Pods-MIRSCTRL-MIRSCTRLUITests/Pods-MIRSCTRL-MIRSCTRLUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E993F53D4EAC30FB9528099E /* Pods-MIRSCTRL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIRSCTRL.release.xcconfig"; path = "Target Support Files/Pods-MIRSCTRL/Pods-MIRSCTRL.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0E5B44257F96CC00CFB321 /* Neumorphic in Frameworks */,
 				418AE58C03EA18474800DD1C /* Pods_MIRSCTRL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,9 +109,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC0E5B78258078A000CFB321 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		ACA6E4C4257717270063255E = {
 			isa = PBXGroup;
 			children = (
+				AC0E5B78258078A000CFB321 /* Font */,
 				ACA6E4CF257717270063255E /* MIRSCTRL */,
 				ACA6E4E62577172B0063255E /* MIRSCTRLTests */,
 				ACA6E4F12577172B0063255E /* MIRSCTRLUITests */,
@@ -132,6 +146,8 @@
 				ACA6E4D0257717270063255E /* AppDelegate.swift */,
 				ACA6E4D2257717270063255E /* SceneDelegate.swift */,
 				ACA6E4D4257717270063255E /* ContentView.swift */,
+				ACA90BF7257A09A3002086B1 /* HomeBackgound.swift */,
+				AC0E5B4825804CF300CFB321 /* neumorphismButton.swift */,
 				ACA6E4D62577172B0063255E /* Assets.xcassets */,
 				ACA6E4DB2577172B0063255E /* LaunchScreen.storyboard */,
 				ACA6E4DE2577172B0063255E /* Info.plist */,
@@ -197,6 +213,9 @@
 			dependencies = (
 			);
 			name = MIRSCTRL;
+			packageProductDependencies = (
+				AC0E5B43257F96CC00CFB321 /* Neumorphic */,
+			);
 			productName = MIRSCTRL;
 			productReference = ACA6E4CD257717270063255E /* MIRSCTRL.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +290,9 @@
 				Base,
 			);
 			mainGroup = ACA6E4C4257717270063255E;
+			packageReferences = (
+				AC0E5B42257F96CC00CFB321 /* XCRemoteSwiftPackageReference "neumorphic" */,
+			);
 			productRefGroup = ACA6E4CE257717270063255E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -419,6 +441,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA6E4D1257717270063255E /* AppDelegate.swift in Sources */,
+				ACA90BF8257A09A3002086B1 /* HomeBackgound.swift in Sources */,
+				AC0E5B4925804CF300CFB321 /* neumorphismButton.swift in Sources */,
 				ACA6E4D3257717270063255E /* SceneDelegate.swift in Sources */,
 				ACA6E4D5257717270063255E /* ContentView.swift in Sources */,
 			);
@@ -757,6 +781,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC0E5B42257F96CC00CFB321 /* XCRemoteSwiftPackageReference "neumorphic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/costachung/neumorphic/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC0E5B43257F96CC00CFB321 /* Neumorphic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC0E5B42257F96CC00CFB321 /* XCRemoteSwiftPackageReference "neumorphic" */;
+			productName = Neumorphic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACA6E4C5257717270063255E /* Project object */;
 }
