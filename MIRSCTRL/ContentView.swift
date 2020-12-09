@@ -6,13 +6,18 @@
 //
 
 import SwiftUI
+import Neumorphic
 
 struct ContentView: View {
+    
     var body: some View {
         ZStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
             HomeBackgound()
-            
-            Spacer()
+            VStack {
+                Spacer().frame(height: 500)
+                neumorphismButton()
+            }
+
         }
     }
 }
