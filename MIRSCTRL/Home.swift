@@ -33,7 +33,7 @@ struct Home: View {
                 .softButtonStyle(Circle(), padding: 60, mainColor: backgroundColor, darkShadowColor: Color(red: 204 / 255, green: 187 / 255, blue: 170 / 255), lightShadowColor: Color(red: 1, green: 1, blue: 1, opacity: 0.4), pressedEffect: .hard)
                 .frame(width: 250, height: 250)
             }
-            .fullScreenCover(isPresented: $startCollect) {
+            .sheet(isPresented: $startCollect) {
                 SelectBall()
             }
         }

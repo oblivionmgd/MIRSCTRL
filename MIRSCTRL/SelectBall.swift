@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SelectBall: View {
-    @State private var draftProfile = Profile.default
     let darkRed = Color(red: 199 / 255, green: 91 / 255, blue: 87 / 255)
     let backgroundColor = Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255)
     let green = Color(red: 56 / 255, green: 91 / 255, blue: 91 / 255)
@@ -20,10 +19,10 @@ struct SelectBall: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Circle()
                 .fill(green)
-                .frame(width: 650, height: 650, alignment: .bottom)
+                .frame(width: 700, height: 700, alignment: .bottom)
                 .offset(y: 300)
             VStack {
-                Spacer().frame(height: 20)
+                Spacer().frame(width:1, height: 40)
                 Text("Select Ball.")
                     .font(.system(size: 48, weight: .heavy))
                     .foregroundColor(black)
@@ -40,6 +39,7 @@ struct SelectBall: View {
                 .softButtonStyle(RoundedRectangle(cornerRadius: 36), mainColor: green, darkShadowColor: Color(red: 48 / 255, green: 78 / 255, blue: 78 / 255), lightShadowColor: Color(red: 64 / 255, green: 106 / 255, blue: 106 / 255), pressedEffect: .hard)
             }
         }
+        .offset(y: -20)
     }
 }
 
