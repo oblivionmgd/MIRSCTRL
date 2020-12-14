@@ -7,20 +7,32 @@
 
 import SwiftUI
 
+extension Animation {
+    static func ripple() -> Animation {
+        Animation.spring(dampingFraction: 0.3)
+            .speed(1)
+    }
+}
+
+let darkRed = Color(red: 199 / 255, green: 91 / 255, blue: 87 / 255)
+let backgroundColor = Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255)
+let green = Color(red: 56 / 255, green: 91 / 255, blue: 91 / 255)
+let black = Color(red: 40 / 255, green: 54 / 255, blue: 74 / 255)
+
 struct SelectBall: View {
-    let darkRed = Color(red: 199 / 255, green: 91 / 255, blue: 87 / 255)
-    let backgroundColor = Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255)
-    let green = Color(red: 56 / 255, green: 91 / 255, blue: 91 / 255)
-    let black = Color(red: 40 / 255, green: 54 / 255, blue: 74 / 255)
-    
+    @State var isProcessing = false
+    @State var circleSize: CGFloat = 700
+
     var body: some View {
         ZStack {
             backgroundColor
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Circle()
                 .fill(green)
-                .frame(width: 700, height: 700, alignment: .bottom)
+                .frame(width: circleSize, height: circleSize, alignment: .bottom)
                 .offset(y: 300)
+                .scaleEffect(isProcessing ? 8 : 1)
+                .animation(.ripple())
             VStack {
                 Spacer().frame(width:1, height: 40)
                 Text("Select Ball.")
@@ -31,7 +43,9 @@ struct SelectBall: View {
                     .foregroundColor(black)
                 BallTabView()
                     .frame(width:UIScreen.main.bounds.width)
-                Button(action:{}){
+                Button(action:{
+                    isProcessing.toggle()
+                }){
                     Text("    START    ")
                         .font(.system(size: 36, weight: .bold))
                         .foregroundColor(backgroundColor)
@@ -40,6 +54,17 @@ struct SelectBall: View {
             }
         }
         .offset(y: -20)
+    }
+}
+
+struct Processing: View {
+    var body: some View {
+        ZStack {
+            Text("Procesing...")
+                .font(.system(size: 48, weight: .heavy))
+                .foregroundColor(backgroundColor)
+        }
+        .background(green)
     }
 }
 
