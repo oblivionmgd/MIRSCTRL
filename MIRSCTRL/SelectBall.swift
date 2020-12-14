@@ -17,6 +17,7 @@ struct SelectBall: View {
     var body: some View {
         ZStack {
             backgroundColor
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Circle()
                 .fill(green)
                 .frame(width: 650, height: 650, alignment: .bottom)
