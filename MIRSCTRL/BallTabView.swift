@@ -44,7 +44,7 @@ struct BallTabView: View {
             }
             .offset(y: -20)
             .onAppear() {
-                self.ref.child("MIRS").child("selectedBall").setValue(["ball":"tennisballdd"])
+                self.ref.child("MIRS").child("selectedBall").setValue(["ball":"tennisball"])
             }
             VStack {
                 Image("pingpongimg")
