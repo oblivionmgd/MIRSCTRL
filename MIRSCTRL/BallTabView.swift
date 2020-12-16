@@ -44,7 +44,7 @@ struct BallTabView: View {
             }
             .offset(y: -20)
             .onAppear() {
-                self.ref.child("MIRS").child("hogefuga").setValue(["hogefuga":"uoooo"])
+                self.ref.child("MIRS").child("selectedBall").setValue(["ball":"tennisballdd"])
             }
             VStack {
                 Image("pingpongimg")
@@ -60,7 +60,7 @@ struct BallTabView: View {
             }
             .offset(y: -20)
             .onAppear() {
-                self.ref.child("MIRS").child("hogefuga").setValue(["hogefuga":"uhyoooooo"])
+                self.ref.child("MIRS").child("selectedBall").setValue(["ball":"pingpong"])
             }
         }
         .tabViewStyle(PageTabViewStyle())
