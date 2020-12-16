@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
 
 extension Animation {
     static func ripple() -> Animation {
         Animation.spring(dampingFraction: 0.3)
-            .speed(1.5)
+            .speed(1.2)
     }
 }
 
@@ -22,6 +23,8 @@ let black = Color(red: 40 / 255, green: 54 / 255, blue: 74 / 255)
 struct SelectBall: View {
     @State var isProcessing = false
     @State var objectOpacity:Double  = 1
+    
+    var ref: DatabaseReference = Database.database().reference()
 
     var body: some View {
         ZStack {
@@ -31,7 +34,7 @@ struct SelectBall: View {
                 .fill(green)
                 .frame(width: 700, height: 700, alignment: .bottom)
                 .offset(y: 300)
-                .scaleEffect(isProcessing ? 8 : 1)
+                .scaleEffect(isProcessing ? 6.3 : 1)
                 .animation(.ripple())
             VStack {
                 Spacer().frame(width:1, height: 40)
@@ -62,18 +65,9 @@ struct SelectBall: View {
             }
         }
         .offset(y: -20)
-        
-    }
-}
-
-struct Processing: View {
-    var body: some View {
-        ZStack {
-            Text("Procesing...")
-                .font(.system(size: 48, weight: .heavy))
-                .foregroundColor(backgroundColor)
+        if isProcessing {
+            Processing()
         }
-        .background(green)
     }
 }
 

@@ -1,0 +1,6 @@
+framework module Pods_MIRSCTRL_MIRSCTRLUITests {
+  umbrella header "Pods-MIRSCTRL-MIRSCTRLUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

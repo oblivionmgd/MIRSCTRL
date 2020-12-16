@@ -1,0 +1,6 @@
+framework module Pods_MIRSCTRL {
+  umbrella header "Pods-MIRSCTRL-umbrella.h"
+
+  export *
+  module * { export * }
+}
