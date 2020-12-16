@@ -21,10 +21,10 @@ let green = Color(red: 56 / 255, green: 91 / 255, blue: 91 / 255)
 let black = Color(red: 40 / 255, green: 54 / 255, blue: 74 / 255)
 
 struct SelectBall: View {
+    var ref: DatabaseReference = Database.database().reference()
+    
     @State var isProcessing = false
     @State var objectOpacity:Double  = 1
-    
-    var ref: DatabaseReference = Database.database().reference()
 
     var body: some View {
         ZStack {
@@ -51,6 +51,7 @@ struct SelectBall: View {
                     .scaleEffect(isProcessing ? 0 : 1)
                     .opacity(objectOpacity)
                 Button(action:{
+                    self.ref.child("MIRS").child("machineStatus").setValue(["Status":"go"])
                     isProcessing.toggle()
                     withAnimation(.easeOut(duration: 0.5)){
                         self.objectOpacity = 0

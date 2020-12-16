@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
+
 
 struct Ball: Identifiable {
     var id: Int
@@ -14,7 +16,11 @@ struct Ball: Identifiable {
     var ballDescription: String
 }
 
+
 struct BallTabView: View {
+    var ref: DatabaseReference = Database.database().reference()
+    
+    @State private var selected = 0
     
     let balls: [Ball] = [
         Ball(id: 0, ballImageName: "tennisballimg", ballName: "Tennis Ball", ballDescription: "Storage limit: \n About 8 ~ 10 balls"),
@@ -23,25 +29,40 @@ struct BallTabView: View {
     
     
     var body: some View{
-        TabView{
-            ForEach(balls) { ball in
-                VStack {
-                    Image(ball.ballImageName)
-                        .resizable()
-                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
-                    Text(ball.ballName)
-                        .font(.system(size: 36, weight: .bold))
-                        .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
-
-                    Text(ball.ballDescription)
-                        .font(.system(size: 12, weight: .bold))
-                        .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
-                        .multilineTextAlignment(.leading)
-                }
-                .offset(y: -20)
+        TabView {
+            VStack {
+                Image("tennisballimg")
+                    .resizable()
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
+                Text("Tennis Ball")
+                    .font(.system(size: 36, weight: .bold))
+                    .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
+                Text("Storage limit: \n About 8~10 balls")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
+                    .multilineTextAlignment(.leading)
+            }
+            .offset(y: -20)
+            .onAppear() {
+                self.ref.child("MIRS").child("hogefuga").setValue(["hogefuga":"uoooo"])
+            }
+            VStack {
+                Image("pingpongimg")
+                    .resizable()
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
+                Text("Table Tennis Ball")
+                    .font(.system(size: 36, weight: .bold))
+                    .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
+                Text("Storage limit: \n About 50~70 balls")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
+                    .multilineTextAlignment(.leading)
+            }
+            .offset(y: -20)
+            .onAppear() {
+                self.ref.child("MIRS").child("hogefuga").setValue(["hogefuga":"uhyoooooo"])
             }
         }
-//        .aspectRatio(contentMode: .fit)
         .tabViewStyle(PageTabViewStyle())
     }
 }
