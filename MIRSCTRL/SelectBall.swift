@@ -34,7 +34,7 @@ struct SelectBall: View {
                 .fill(green)
                 .frame(width: 700, height: 700, alignment: .bottom)
                 .offset(y: 300)
-                .scaleEffect(isProcessing ? 6.3 : 1)
+                .scaleEffect(isProcessing ? 7 : 1)
                 .animation(.ripple())
             VStack {
                 Spacer().frame(width:1, height: 40)
@@ -64,11 +64,12 @@ struct SelectBall: View {
                 .softButtonStyle(RoundedRectangle(cornerRadius: 36), mainColor: green, darkShadowColor: Color(red: 48 / 255, green: 78 / 255, blue: 78 / 255), lightShadowColor: Color(red: 64 / 255, green: 106 / 255, blue: 106 / 255), pressedEffect: .hard)
                 .opacity(objectOpacity)
             }
+            if isProcessing {
+                Processing()
+            }
+
         }
         .offset(y: -20)
-        if isProcessing {
-            Processing()
-        }
     }
 }
 
