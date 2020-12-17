@@ -6,54 +6,60 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
 
 struct Processing: View {
     @State var isLoading = false
+    @State var objectOpacity: Double = 0
+    
+    var ref: DatabaseReference = Database.database().reference()
     
     let loadingRingSize: CGFloat = 300
     let loadingRingWidth: CGFloat = 25
     var body: some View {
-        ZStack {
-            green
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            VStack {
-                Text("Procesing...")
-                    .font(.system(size: 48, weight: .heavy))
+        VStack {
+            Text("Procesing...")
+                .font(.system(size: 48, weight: .heavy))
+                .foregroundColor(backgroundColor)
+            Spacer().frame(width: 1, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+            ZStack {
+                Circle()
+                    .fill(green)
+                    .frame(width: loadingRingSize, height: loadingRingSize)
+                    .softInnerShadow(Circle(), darkShadow: Color(red: 48 / 255, green: 78 / 255, blue: 78 / 255), lightShadow: Color(red: 64 / 255, green: 106 / 255, blue: 106 / 255), spread: 0.1)
+                Circle()
+                    .fill(green)
+                    .frame(width: loadingRingSize - loadingRingWidth*2, height: loadingRingSize - loadingRingWidth*2)
+                    .softOuterShadow(darkShadow: Color(red: 48 / 255, green: 78 / 255, blue: 78 / 255), lightShadow: Color(red: 64 / 255, green: 106 / 255, blue: 106 / 255))
+                Circle()
+                    .trim(from: 0.75, to: 1)
+                    .stroke(backgroundColor, style: StrokeStyle(
+                        lineWidth: loadingRingWidth,
+                        lineCap: .round
+                    ))
+                    .frame(width: 275, height: 275)
+                    .rotationEffect(Angle(degrees: isLoading ? 360 : 0))
+                    .animation(Animation.linear(duration: 1.5).repeatForever(autoreverses: false))
+                Text("XX%")
+                    .font(.system(size: 80, weight: .heavy))
                     .foregroundColor(backgroundColor)
-                Spacer().frame(width: 1, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                ZStack {
-                    Circle()
-                        .fill(green)
-                        .frame(width: loadingRingSize, height: loadingRingSize)
-                        .softInnerShadow(Circle(), darkShadow: Color(red: 48 / 255, green: 78 / 255, blue: 78 / 255), lightShadow: Color(red: 64 / 255, green: 106 / 255, blue: 106 / 255), spread: 0.1)
-                    Circle()
-                        .fill(green)
-                        .frame(width: loadingRingSize - loadingRingWidth*2, height: loadingRingSize - loadingRingWidth*2)
-                        .softOuterShadow(darkShadow: Color(red: 48 / 255, green: 78 / 255, blue: 78 / 255), lightShadow: Color(red: 64 / 255, green: 106 / 255, blue: 106 / 255))
-                    Circle()
-                        .trim(from: 0.75, to: 1)
-                        .stroke(backgroundColor, style: StrokeStyle(
-                            lineWidth: loadingRingWidth,
-                            lineCap: .round
-                        ))
-                        .frame(width: 275, height: 275)
-                        .rotationEffect(Angle(degrees: isLoading ? 360 : 0))
-                        .animation(Animation.linear(duration: 1.5).repeatForever(autoreverses: false))
-                    Text("XX%")
-                        .font(.system(size: 80, weight: .heavy))
-                        .foregroundColor(backgroundColor)
-                }
-                Spacer().frame(width: 1, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                Button (action: {}) {
-                    Text("    STOP    ")
-                        .font(.system(size: 36, weight: .bold))
-                        .foregroundColor(backgroundColor)
-                }
-                .softButtonStyle(RoundedRectangle(cornerRadius: 36), mainColor: green, darkShadowColor: Color(red: 48 / 255, green: 78 / 255, blue: 78 / 255), lightShadowColor: Color(red: 64 / 255, green: 106 / 255, blue: 106 / 255), pressedEffect: .hard)
             }
+            Spacer().frame(width: 1, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+            Button (action: {
+                self.ref.child("MIRS").child("machineStatus").setValue(["Status": "stop"])
+            }) {
+                Text("     STOP     ")
+                    .font(.system(size: 36, weight: .bold))
+                    .foregroundColor(backgroundColor)
+            }
+            .softButtonStyle(RoundedRectangle(cornerRadius: 36), mainColor: green, darkShadowColor: Color(red: 48 / 255, green: 78 / 255, blue: 78 / 255), lightShadowColor: Color(red: 64 / 255, green: 106 / 255, blue: 106 / 255), pressedEffect: .hard)
         }
+        .opacity(objectOpacity)
         .onAppear() {
             self.isLoading = true
+            withAnimation (.easeOut(duration: 0.5)){
+                self.objectOpacity = 1
+            }
         }
     }
 }
