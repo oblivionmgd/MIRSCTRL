@@ -18,6 +18,7 @@ struct Processing: View {
     let loadingRingWidth: CGFloat = 25
     var body: some View {
         VStack {
+            Spacer().frame(width:1, height: 25)
             Text("Procesing...")
                 .font(.system(size: 48, weight: .heavy))
                 .foregroundColor(backgroundColor)
@@ -44,7 +45,7 @@ struct Processing: View {
                     .font(.system(size: 80, weight: .heavy))
                     .foregroundColor(backgroundColor)
             }
-            Spacer().frame(width: 1, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+            Spacer().frame(width: 1, height: 125)
             Button (action: {
                 self.ref.child("MIRS").child("machineStatus").setValue(["Status": "stop"])
             }) {
@@ -57,7 +58,7 @@ struct Processing: View {
         .opacity(objectOpacity)
         .onAppear() {
             self.isLoading = true
-            withAnimation (.easeOut(duration: 0.5)){
+            withAnimation (Animation.easeOut(duration: 0.5).delay(0.5)){
                 self.objectOpacity = 1
             }
         }

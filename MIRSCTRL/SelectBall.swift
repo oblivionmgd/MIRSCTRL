@@ -25,7 +25,6 @@ struct SelectBall: View {
     
     @State var isProcessing = false
     @State var objectOpacity:Double  = 1
-
     var body: some View {
         ZStack {
             backgroundColor
