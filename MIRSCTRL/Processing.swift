@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseDatabase
 
 struct Processing: View {
+    @EnvironmentObject var startCollect: processStatus
     @State var isLoading = false
     @State var objectOpacity: Double = 0
     
@@ -47,6 +48,7 @@ struct Processing: View {
             }
             Spacer().frame(width: 1, height: 125)
             Button (action: {
+                self.startCollect.isRun.toggle()
                 self.ref.child("MIRS").child("machineStatus").setValue(["Status": "stop"])
             }) {
                 Text("     STOP     ")
