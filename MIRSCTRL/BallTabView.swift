@@ -22,12 +22,6 @@ struct BallTabView: View {
     
     @State private var selected = 0
     
-    let balls: [Ball] = [
-        Ball(id: 0, ballImageName: "tennisballimg", ballName: "Tennis Ball", ballDescription: "Storage limit: \n About 8 ~ 10 balls"),
-        Ball(id: 1, ballImageName: "pingpongimg", ballName: "Table Tennis Ball", ballDescription: "Storage limit: \n About 50 ~ 70 balls")
-    ]
-    
-    
     var body: some View{
         TabView {
             VStack {

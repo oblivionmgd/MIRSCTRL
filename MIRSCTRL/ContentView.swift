@@ -11,6 +11,7 @@ import Neumorphic
 struct ContentView: View {
     var body: some View {
         Home()
+            .environmentObject(processStatus())
     }
 }
 

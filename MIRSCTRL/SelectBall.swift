@@ -22,13 +22,13 @@ let black = Color(red: 40 / 255, green: 54 / 255, blue: 74 / 255)
 
 struct SelectBall: View {
     var ref: DatabaseReference = Database.database().reference()
-    
+    @EnvironmentObject var startCollect: processStatus
     @State var isProcessing = false
     @State var objectOpacity:Double  = 1
     var body: some View {
         ZStack {
             backgroundColor
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .edgesIgnoringSafeArea(.all)
             Circle()
                 .fill(green)
                 .frame(width: 700, height: 700, alignment: .bottom)
@@ -65,6 +65,7 @@ struct SelectBall: View {
             }
             if isProcessing {
                 Processing()
+                    .environmentObject(self.startCollect)
             }
 
         }
