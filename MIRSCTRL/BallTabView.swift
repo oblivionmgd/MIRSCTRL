@@ -9,14 +9,6 @@ import SwiftUI
 import FirebaseDatabase
 
 
-struct Ball: Identifiable {
-    var id: Int
-    var ballImageName: String
-    var ballName: String
-    var ballDescription: String
-}
-
-
 struct BallTabView: View {
     var ref: DatabaseReference = Database.database().reference()
     
@@ -27,12 +19,12 @@ struct BallTabView: View {
             VStack {
                 Image("tennisballimg")
                     .resizable()
-                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
-                Text("Tennis Ball")
-                    .font(.system(size: 36, weight: .bold))
+                    .frame(width: UIScreen.main.bounds.width*0.8, height: UIScreen.main.bounds.width*0.8)
+                Text("テニスボール")
+                    .font( Font.custom("NotoSansJP-Bold", size: 36))
                     .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
-                Text("Storage limit: \n About 8~10 balls")
-                    .font(.system(size: 12, weight: .bold))
+                Text("ボール回収上限: \n 約8~10個")
+                    .font(Font.custom("NotoSansJP-Bold", size: 10))
                     .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
                     .multilineTextAlignment(.leading)
             }
@@ -44,11 +36,11 @@ struct BallTabView: View {
                 Image("pingpongimg")
                     .resizable()
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
-                Text("Table Tennis Ball")
-                    .font(.system(size: 36, weight: .bold))
+                Text("ピンポン球")
+                    .font(Font.custom("NotoSansJP-Bold", size: 36))
                     .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
-                Text("Storage limit: \n About 50~70 balls")
-                    .font(.system(size: 12, weight: .bold))
+                Text("ボール回収上限数: \n 約50~70個")
+                    .font(Font.custom("NotoSansJP-Bold", size: 10))
                     .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
                     .multilineTextAlignment(.leading)
             }

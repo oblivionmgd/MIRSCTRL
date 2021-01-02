@@ -20,10 +20,10 @@ struct Processing: View {
     var body: some View {
         VStack {
             Spacer().frame(width:1, height: 25)
-            Text("Procesing...")
-                .font(.system(size: 48, weight: .heavy))
+            Text("作業中...")
+                .font(Font.custom("NotoSansJP-Bold", size: 54))
                 .foregroundColor(backgroundColor)
-            Spacer().frame(width: 1, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+            Spacer().frame(width: 1, height: 80)
             ZStack {
                 Circle()
                     .fill(green)

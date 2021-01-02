@@ -26,8 +26,7 @@ struct Home: View {
                 }) {
                     VStack {
                         Text("あつめる")
-                            .font(Font.custom("HiraginoSans-W6", size: 18))
-                            .fontWeight(.bold)
+                            .font(Font.custom("NotoSansJP-Bold", size: 18))
                             .foregroundColor(darkRed)
                         Text("Collect")
                             .font(.system(size: 36, weight: .bold))
