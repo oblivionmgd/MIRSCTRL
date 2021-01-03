@@ -9,15 +9,54 @@ import SwiftUI
 
 struct HomeBackgound: View {
     var body: some View {
-        Image("MIRSHome")
-            .resizable()
-            .frame(height: 872, alignment: .topLeading)
-            .overlay(Text("Welcome.")
-                        .fontWeight(.heavy)
-                        .font(.system(size: 40, weight: .heavy))
-                        .foregroundColor(Color(red: 250, green: 247, blue: 237, opacity: 1.0))
-                        .multilineTextAlignment(.leading)
-                        .offset(x: -70,y: -350))
+        ZStack {
+            Image("MIRSHome")
+                .resizable()
+                .frame(height: UIScreen.main.bounds.height)
+                .edgesIgnoringSafeArea(.all)
+            GeometryReader<AnyView> { geometry in
+                if geometry.size.width == 375 { // welcome message for ipxs & ip11pro & ip12mini
+                    return AnyView(
+                        Text("Welcome.")
+                            .foregroundColor(.white)
+                            .font(.system(size: 40, weight: .bold))
+                            .offset(x: 20, y: 40)
+                    )
+                }
+                else if geometry.size.width == 390 { // welcome message for ip12 & ip12pro
+                    return AnyView(
+                            Text("Welcome.")
+                                .foregroundColor(.white)
+                                .font(.system(size: 40, weight: .bold))
+                                .offset(x: 20, y: 45)
+                    )
+                }
+                else if geometry.size.width == 414 { // welcome message for ip11 & ip11promax
+                    return AnyView(
+                            Text("Welcome.")
+                                .foregroundColor(.white)
+                                .font(.system(size: 45, weight: .bold))
+                                .offset(x: 20, y: 45)
+                    )
+                }
+                else if geometry.size.width == 428 { // welcome message for ip12promax
+                    return AnyView(
+                            Text("Welcome.")
+                                .foregroundColor(.white)
+                                .font(.system(size: 45, weight: .bold))
+                                .offset(x: 25, y: 45)
+                    )
+                }
+
+                else { //いい加減にしろ
+                    return AnyView(
+                            Text("Welcome.")
+                                .foregroundColor(.white)
+                                .font(.system(size: 36, weight: .bold))
+                    )
+                }
+            }
+        }
     }
 }
 
