@@ -24,7 +24,7 @@ struct BallTabView: View {
                     .font( Font.custom("NotoSansJP-Bold", size: 36))
                     .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
                 Text("ボール回収上限: \n 約8~10個")
-                    .font(Font.custom("NotoSansJP-Bold", size: 10))
+                    .font(Font.custom("NotoSansJP-Bold", size: 12))
                     .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
                     .multilineTextAlignment(.leading)
             }
@@ -39,10 +39,12 @@ struct BallTabView: View {
                 Text("ピンポン球")
                     .font(Font.custom("NotoSansJP-Bold", size: 36))
                     .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
+                    .offset(y: -35)
                 Text("ボール回収上限数: \n 約50~70個")
-                    .font(Font.custom("NotoSansJP-Bold", size: 10))
+                    .font(Font.custom("NotoSansJP-Bold", size: 12))
                     .foregroundColor(Color(red: 237 / 255, green: 221 / 255, blue: 199 / 255))
                     .multilineTextAlignment(.leading)
+                    .offset(y: -35)
             }
             .offset(y: -20)
             .onAppear() {
