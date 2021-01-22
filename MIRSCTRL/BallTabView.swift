@@ -15,7 +15,9 @@ struct BallTabView: View {
     @State private var selected = 0
     
     var body: some View{
+        //タブビュー(横にスライドするやつ)
         TabView {
+            //テニスボールの画像とか説明とか
             VStack {
                 Image("tennisballimg")
                     .resizable()
@@ -29,9 +31,11 @@ struct BallTabView: View {
                     .multilineTextAlignment(.leading)
             }
             .offset(y: -20)
+            //タブビューで描画した瞬間にDatabaseの値を変更する
             .onAppear() {
                 self.ref.child("MIRS").child("selectedBall").setValue(["ball":"tennisball"])
             }
+            // テニスボールの画像とか説明とか
             VStack {
                 Image("pingpongimg")
                     .resizable()
@@ -47,11 +51,12 @@ struct BallTabView: View {
                     .offset(y: -35)
             }
             .offset(y: -20)
+            //タブビューで描画した瞬間にDatabaseの値を変更する
             .onAppear() {
                 self.ref.child("MIRS").child("selectedBall").setValue(["ball":"pingpong"])
             }
         }
-        .tabViewStyle(PageTabViewStyle())
+        .tabViewStyle(PageTabViewStyle()) //横スクタブビューにするやつ(たぶんiOS14.0~)
     }
 }
 

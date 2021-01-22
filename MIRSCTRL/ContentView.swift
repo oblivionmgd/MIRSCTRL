@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+// Neumorphic: ボタンなどのUIの装飾
 import Neumorphic
 
 struct ContentView: View {
     var body: some View {
         Home()
+            //モーダルに使う用の変数、なんかこれContentView.swiftから渡さないとエラーが出る。
             .environmentObject(processStatus())
     }
 }
